@@ -1,44 +1,42 @@
-URxvt.scrollBar:				false
-URxvt.internalBorder:		30
-URxvt*externalBorder:		5
-URxvt.saveLines:				65535
+URxvt.scrollBar:        false
+URxvt.internalBorder:   30
+URxvt*externalBorder:   5
+URxvt.saveLines:        65535
 
 !! Font config
-Xft*dpi:								96
-URxvt.font:							xft:Monospace:style=Regular:pixelsize=13:antialias=true:weight=200
+Xft*dpi:                96
+URxvt.font:             xft:Monospace:style=Regular:pixelsize=13:antialias=true:weight=200
 
 !! Color config
-!URxvt*tintColor: #000000
-!URxvt.borderColor:			#000000
-*.background:						#000000
-*.foreground:						#ffffff
+*.background:           #000000
+*.foreground:           #ffffff
 
 ! black
-*.color0  :							#4b5262
-*.color8  :							#434a5a
+*.color0  :             #4b5262
+*.color8  :             #434a5a
 
 ! red
-*.color1  :							#bf616a
-*.color9  :							#b3555e
+*.color1  :             #bf616a
+*.color9  :             #b3555e
 
 ! green
-*.color2  :							#a3be8c
-*.color10 :							#93ae7c
+*.color2  :             #a3be8c
+*.color10 :             #93ae7c
 
 ! yellow
-*.color3  :							#ebcb8b
-*.color11 :							#dbbb7b
+*.color3  :             #ebcb8b
+*.color11 :             #dbbb7b
 
 ! blue
-*.color4  :							#81a1c1
-*.color12 :							#7191b1
+*.color4  :             #81a1c1
+*.color12 :             #7191b1
 
 ! magenta
-*.color5  :							#b48ead
-*.color13 :							#a6809f
+*.color5  :             #b48ead
+*.color13 :             #a6809f
 
 ! cyan
-*.color6  :							#89d0bA
+*.color6  :             #89d0bA
 *.color14 :             #7dbba8
 
 ! white
