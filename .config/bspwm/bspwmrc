@@ -1,6 +1,8 @@
 #! /bin/sh
 
 sxhkd &
+feh --bg-fill "/home/mzzsml/Pictures/wallhaven-294634_1920x1080.png" &
+compton &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
@@ -12,11 +14,11 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 bspc rule -a URxvt state=floating
-
-feh --bg-fill "/home/mzzsml/Pictures/wallhaven-294634_1920x1080.png" &
+bspc rule -a Firefox desktop='^2'
+bspc rule -a TelegraDesktop desktop='^3'
+bspc rule -a Code desktop='^5'
