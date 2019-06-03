@@ -1,6 +1,7 @@
 #! /bin/sh
 
 sxhkd &
+tint2 &
 feh --bg-fill "/home/mzzsml/Pictures/wallhaven-294634_1920x1080.png" &
 compton --config ~/.config/compton.conf &
 
