@@ -8,7 +8,7 @@ Xft*dpi:                96
 URxvt.font:             xft:Monospace:style=Regular:pixelsize=13:antialias=true:weight=200
 
 !! Color config
-*.background:           #000000
+*.background:           #050505
 *.foreground:           #ffffff
 
 ! black
