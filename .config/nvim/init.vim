@@ -74,6 +74,6 @@ endif
 
 " Enable material colorscheme
 set background=dark
-" colorscheme material
+colorscheme material
 let g:material_theme_style = 'default'
 let g:lightline = { 'colorscheme': 'material_vim' }
