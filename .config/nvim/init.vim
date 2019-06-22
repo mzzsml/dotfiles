@@ -5,6 +5,7 @@ call plug#begin()
 " -------------------------------------
 Plug 'joshdick/onedark.vim'
 Plug 'kaicataldo/material.vim'
+Plug 'arcticicestudio/nord-vim'
 
 " Status Lines
 " -------------------------------------
@@ -70,10 +71,8 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
-"colorscheme onedark
-
 " Enable material colorscheme
 set background=dark
-colorscheme material
+colorscheme nord
 let g:material_theme_style = 'default'
 let g:lightline = { 'colorscheme': 'material_vim' }
