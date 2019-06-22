@@ -5,7 +5,7 @@
 # Gradients
 #-------------------------------------
 # Backgrounds
-# Background 1: Systray
+# Background 1:
 rounded = 0
 border_width = 0
 border_sides = TBLR
@@ -19,7 +19,20 @@ background_color_pressed = #46919c 100
 border_color_pressed = #224f55 0
 border_color_pressed = #fffeff 100
 
-# Background 2: Systray, Clock
+# Background 2: Clock
+rounded = 0
+border_width = 0
+border_sides = TBLR
+border_content_tint_weight = 0
+background_content_tint_weight = 0
+background_color = #1e2225 50
+border_color = #fffeff 100
+background_color_hover = #202020 100
+border_color_hover = #fffeff 100
+background_color_pressed = #202020 100
+border_color_pressed = #fffeff 100
+
+# Background 3: Systray
 rounded = 0
 border_width = 0
 border_sides = TBLR
@@ -37,7 +50,7 @@ border_color_pressed = #fffeff 100
 panel_items = SC
 panel_size = 100% 25
 panel_margin = 10 10
-panel_padding = 0 0 20
+panel_padding = 0 0 0
 panel_background_id = 0
 wm_menu = 1
 panel_dock = 0
