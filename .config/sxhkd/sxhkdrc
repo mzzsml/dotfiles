@@ -137,5 +137,5 @@ XF86AudioRaiseVolume
 	amixer set Master 5%+
 
 # screenshots
-super + print
-	scrot '/home/mzzsml/Pictures/screenshots/scrot_%H%M%s_%d%m%Y_$wx$h.png'
+Print
+	scrot '/home/mzzsml/Pictures/screenshots/scrot_%H%M%S_%d%m%Y_$wx$h.png'
