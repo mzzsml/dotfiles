@@ -1,15 +1,18 @@
 #! /bin/sh
 
 sxhkd &
-tint2 &
-tint2 -c ~/.config/tint2/tint2rc.right &
+#tint2 &
+#tint2 -c ~/.config/tint2/tint2rc.right &
+
+#polybar custom &
+
 feh --bg-fill "/home/mzzsml/Pictures/wallhaven-294634_1920x1080.png" &
 compton --config ~/.config/compton.conf &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
-bspc config border_width         4
-bspc config window_gap          12
+bspc config border_width        4
+bspc config window_gap          14 #12
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
@@ -24,3 +27,5 @@ bspc rule -a st-256color
 bspc rule -a Firefox desktop='^2'
 bspc rule -a TelegramDesktop desktop='^3'
 bspc rule -a Code desktop='^5'
+
+bspc config focus_follows_pointer true
