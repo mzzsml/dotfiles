@@ -7,6 +7,8 @@ Plug 'joshdick/onedark.vim'
 Plug 'kaicataldo/material.vim'
 Plug 'arcticicestudio/nord-vim'
 
+Plug 'junegunn/fzf.vim'
+
 " Status Lines
 " -------------------------------------
 Plug 'itchyny/lightline.vim'
@@ -20,7 +22,7 @@ Plug 'itchyny/lightline.vim'
 " -------------------------------------
 Plug 'sheerun/vim-polyglot'
 
-" Auto open brackets and things
+" Auto close brackets and things
 " -------------------------------------
 Plug 'jiangmiao/auto-pairs'
 
@@ -50,9 +52,13 @@ set nobackup
 set nowb
 
 " Indent using two spaces.
-set softtabstop=2
-set tabstop=2
-set shiftwidth=2
+set softtabstop=4
+set tabstop=4 " width of tab char
+set shiftwidth=4
+"set noexpandtab
+
+" view tabs and spaces
+set list
 
 " Lightline
 set laststatus=2
