@@ -9,7 +9,9 @@ Plug 'arcticicestudio/nord-vim'
 
 " Fuzzy finder for vim
 " -------------------------------------
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+
 
 " Status Lines
 " -------------------------------------
@@ -58,9 +60,12 @@ set noswapfile
 set nobackup
 set nowb
 
+
 " Indent using two spaces.
 set softtabstop=4
-set tabstop=4 " width of tab char
+
+" set the width of tab char
+set tabstop=4
 set shiftwidth=4
 "set noexpandtab
 
