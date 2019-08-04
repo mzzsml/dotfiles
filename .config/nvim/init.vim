@@ -7,6 +7,8 @@ Plug 'joshdick/onedark.vim'
 Plug 'kaicataldo/material.vim'
 Plug 'arcticicestudio/nord-vim'
 
+" Fuzzy finder for vim
+" -------------------------------------
 Plug 'junegunn/fzf.vim'
 
 " Status Lines
@@ -16,7 +18,7 @@ Plug 'itchyny/lightline.vim'
 " Language pack
 " -------------------------------------
 " Snippets
-"Plug 'honza/vim-snippets.vim'
+" Plug 'honza/vim-snippets.vim'
 
 " Syntax highlighting
 " -------------------------------------
@@ -24,11 +26,16 @@ Plug 'sheerun/vim-polyglot'
 
 " Auto close brackets and things
 " -------------------------------------
-Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-surround'
 
 " Improve moving in vim
 " -------------------------------------
 Plug 'matze/vim-move'
+
+" Git
+" -------------------------------------
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
@@ -77,8 +84,8 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
-" Enable material colorscheme
+" Set colorscheme
 set background=dark
 colorscheme nord
-let g:material_theme_style = 'default'
-let g:lightline = { 'colorscheme': 'material_vim' }
+"let g:material_theme_style = 'default'
+let g:lightline = { 'colorscheme': 'nord' }
