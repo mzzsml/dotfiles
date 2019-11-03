@@ -1,45 +1,73 @@
-" vim plugins
+" ██╗███╗   ██╗██╗████████╗██╗   ██╗██╗███╗   ███╗
+" ██║████╗  ██║██║╚══██╔══╝██║   ██║██║████╗ ████║
+" ██║██╔██╗ ██║██║   ██║   ██║   ██║██║██╔████╔██║
+" ██║██║╚██╗██║██║   ██║   ╚██╗ ██╔╝██║██║╚██╔╝██║
+" ██║██║ ╚████║██║   ██║██╗ ╚████╔╝ ██║██║ ╚═╝ ██║
+" ╚═╝╚═╝  ╚═══╝╚═╝   ╚═╝╚═╝  ╚═══╝  ╚═╝╚═╝     ╚═╝
+
+
+
+
+" ------------------------------------------------------------------------------
+" PLUGIN SECTION
+" ------------------------------------------------------------------------------
 call plug#begin()
 
-" Themes
-" -------------------------------------
+" ------------------------------------------------------------------------------
+" APPEARENCE
+" ------------------------------------------------------------------------------
+" Colorschemes
 Plug 'joshdick/onedark.vim'
 Plug 'kaicataldo/material.vim'
 Plug 'arcticicestudio/nord-vim'
 
-" Fuzzy finder for vim
-" -------------------------------------
+" Status line
+Plug 'itchyny/lightline.vim'
+
+" Custom startpage
+Plug 'mhinz/vim-startify'
+
+" Indentation lines
+Plug 'Yggdroot/indentLine'
+
+
+" ------------------------------------------------------------------------------
+" CORE
+" ------------------------------------------------------------------------------
+" Fuzzy finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
-
-" Status Lines
-" -------------------------------------
-Plug 'itchyny/lightline.vim'
-
-" Language pack
-" -------------------------------------
 " Snippets
 " Plug 'honza/vim-snippets.vim'
 
-" Syntax highlighting
-" -------------------------------------
+" Better syntax highlighting
 Plug 'sheerun/vim-polyglot'
 
-" Auto close brackets and things
-" -------------------------------------
+" Insert or delete brackets, parens, quotes in pair
+Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 
-" Improve moving in vim
-" -------------------------------------
+" Move lines and selections up and down
 Plug 'matze/vim-move'
 
 " Git
-" -------------------------------------
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
+Plug 'terryma/vim-multiple-cursors'
+Plug 'godlygeek/tabular'
+
 call plug#end()
+" ------------------------------------------------------------------------------
+" END OF PLUGIN SECTION
+" ------------------------------------------------------------------------------
+
+
+
+" ------------------------------------------------------------------------------
+" APPEARENCE
+" ------------------------------------------------------------------------------
 
 syntax on
 set number
@@ -51,26 +79,9 @@ set cursorline
 "minified files
 set synmaxcol=500
 
-" Draw the certical line
+" Vertical line
 set textwidth=80
 set colorcolumn=+1
-
-" Turn off swapfiles
-set noswapfile
-set nobackup
-set nowb
-
-
-" Indent using two spaces.
-set softtabstop=4
-
-" set the width of tab char
-set tabstop=4
-set shiftwidth=4
-"set noexpandtab
-
-" view tabs and spaces
-set list
 
 " Lightline
 set laststatus=2
@@ -92,5 +103,29 @@ endif
 " Set colorscheme
 set background=dark
 colorscheme nord
-"let g:material_theme_style = 'default'
 let g:lightline = { 'colorscheme': 'nord' }
+
+
+
+
+" ------------------------------------------------------------------------------
+" CORE
+" ------------------------------------------------------------------------------
+
+" Turn off swapfiles
+set noswapfile
+set nobackup
+set nowb
+
+" Indent using two spaces.
+set softtabstop=4
+
+" set the width of tab char
+set tabstop=4
+set shiftwidth=4
+"set noexpandtab
+
+" view tabs and spaces
+set list
+
+"let g:indentLine_setColors = 0
